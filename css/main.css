@@ -53,13 +53,13 @@
 
 @font-face {
   font-family: 'Gotham';
-  font-weight: lighter;
+  font-weight: 300;
   src: url("../fonts/Gotham-Thin.otf");
 }
 
 @font-face {
   font-family: 'Gotham';
-  font-weight: lighter;
+  font-weight: 300;
   font-style: italic;
   src: url("../fonts/Gotham-ThinItalic.otf");
 }
@@ -166,7 +166,7 @@ body #home #front #center-container {
 }
 
 body #home #front #center-container #logo img {
-  height: 50px;
+  height: 45px;
   width: 80px;
 }
 
@@ -182,7 +182,7 @@ body #home #front #center-container #title h1 {
 }
 
 body #home #front #center-container #title h5 {
-  font-size: 1.2em;
+  font-size: 1.18em;
   font-family: 'Gotham';
   font-weight: 500;
 }
@@ -190,9 +190,47 @@ body #home #front #center-container #title h5 {
 body #home #front #center-container #title p {
   top: 1em;
   width: 60%;
-  line-height: 122%;
+  line-height: 121%;
   font-family: 'Gotham';
   font-weight: 420;
   font-size: .7em;
+  color: rgba(255, 255, 255, 0.842);
+}
+
+body #home #front #center-container #animal-type {
+  line-height: 80%;
+  background-position: 100% 50%;
+  background-size: cover;
+  right: 10em;
+  height: 100%;
+  top: -17em;
+  bottom: 6em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #home #front #center-container #animal-type h5 {
+  font-family: 'Gotham';
+  font-weight: 480;
+  font-size: 0.75em;
+  padding-top: 1.3em;
+}
+
+body #home #front #center-container #animal-type p {
+  padding-top: 0.7em;
+  width: 120%;
+  line-height: 122%;
+  font-weight: 415;
+  font-family: 'Gotham';
+  font-size: 0.6em;
+  color: rgba(255, 255, 255, 0.822);
 }
 /*# sourceMappingURL=main.css.map */
