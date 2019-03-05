@@ -1,6 +1,13 @@
+
+@import "fonts";
+
+@import "reset";
+
+@import "flex";
 body{
     background-color: black;
     color: rgba(255, 255, 255, 0.486);
+    font-family: 'Gotham';
 
    #home{
        width: 100vw;
@@ -88,16 +95,47 @@ body{
            #center-container{
                width: calc(100% - 160px);
                top:3em;
+               bottom: -3em;
+               height: 100%;
                display: flex;
                flex-direction: column;
                left: 180px;
-               border: 2px solid red;
+               position: fixed;
+              // border: 2px solid red;
                color: white;
 
                #logo{
                    img{
-                       height: 45px;
+                       height: 50px;
                        width: 80px;
+                   }
+               }
+
+               #title{
+                   width: 45%;
+                   top: 8em;
+
+                   h1{
+                       
+                       font-size: 4em;
+                       font-weight: bolder;
+                      font-family: 'Gotham';
+
+                   }
+
+                   h5{
+                       font-size: 1.2em;
+                       font-family: 'Gotham';
+                       font-weight: 500;
+                   }
+
+                   p{
+                       top: 1em;
+                       width: 60%;
+                       line-height: 122%;
+                       font-family:'Gotham';
+                       font-weight: 420;
+                       font-size: .7em;
                    }
                }
 
