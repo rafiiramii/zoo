@@ -80,4 +80,24 @@ body #home #front #left-menu ul li {
   color: white;
   display: block;
 }
+
+body #home #front #center-container {
+  width: calc(100% - 160px);
+  top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 180px;
+  border: 2px solid red;
+  color: white;
+}
+
+body #home #front #center-container #logo img {
+  height: 50px;
+  width: 80px;
+}
 /*# sourceMappingURL=main.css.map */

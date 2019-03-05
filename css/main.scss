@@ -84,6 +84,24 @@ body{
             }
             
            }
+
+           #center-container{
+               width: calc(100% - 160px);
+               top:3em;
+               display: flex;
+               flex-direction: column;
+               left: 180px;
+               border: 2px solid red;
+               color: white;
+
+               #logo{
+                   img{
+                       height: 50px;
+                       width: 80px;
+                   }
+               }
+
+           }
        }
    }
 
