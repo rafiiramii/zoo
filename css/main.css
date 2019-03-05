@@ -1,6 +1,73 @@
+@import url(/home/rafyramy/myPracticeProj/Zoo/css/reset.css);
+@import url(/home/rafyramy/myPracticeProj/Zoo/css/flex.css);
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/Gotham-Black.otf");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamBold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamBoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamBook.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamBookItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamLight.ttf");
+  font-weight: 420;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamLightItalic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamMedium.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: lighter;
+  src: url("../fonts/Gotham-Thin.otf");
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: lighter;
+  font-style: italic;
+  src: url("../fonts/Gotham-ThinItalic.otf");
+}
+
 body {
   background-color: black;
   color: rgba(255, 255, 255, 0.486);
+  font-family: 'Gotham';
 }
 
 body #home {
@@ -84,6 +151,8 @@ body #home #front #left-menu ul li {
 body #home #front #center-container {
   width: calc(100% - 160px);
   top: 3em;
+  bottom: -3em;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,12 +161,38 @@ body #home #front #center-container {
       -ms-flex-direction: column;
           flex-direction: column;
   left: 180px;
-  border: 2px solid red;
+  position: fixed;
   color: white;
 }
 
 body #home #front #center-container #logo img {
   height: 50px;
   width: 80px;
+}
+
+body #home #front #center-container #title {
+  width: 45%;
+  top: 8em;
+}
+
+body #home #front #center-container #title h1 {
+  font-size: 4em;
+  font-weight: bolder;
+  font-family: 'Gotham';
+}
+
+body #home #front #center-container #title h5 {
+  font-size: 1.2em;
+  font-family: 'Gotham';
+  font-weight: 500;
+}
+
+body #home #front #center-container #title p {
+  top: 1em;
+  width: 60%;
+  line-height: 122%;
+  font-family: 'Gotham';
+  font-weight: 420;
+  font-size: .7em;
 }
 /*# sourceMappingURL=main.css.map */
