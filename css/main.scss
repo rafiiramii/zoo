@@ -1,6 +1,13 @@
+
+@import "fonts";
+
+@import "reset";
+
+@import "flex";
 body{
     background-color: black;
     color: rgba(255, 255, 255, 0.486);
+    font-family: 'Gotham';
 
    #home{
        width: 100vw;
@@ -78,7 +85,7 @@ body{
                    
                    display: block;
                    
-                   //border: 2px solid red;
+//border: 2px solid red;
         
                }
             }
@@ -87,17 +94,86 @@ body{
 
            #center-container{
                width: calc(100% - 160px);
-               top:3em;
+               top: 3em;
+               bottom: -3em;
+               height: 100%;
                display: flex;
                flex-direction: column;
                left: 180px;
-               border: 2px solid red;
+               position: fixed;
+               //border: 2px solid red;
                color: white;
 
                #logo{
                    img{
-                       height: 50px;
+                       height: 45px;
                        width: 80px;
+                   }
+               }
+
+               #title{
+                   width: 45%;
+                   top: 8em;
+                   //border:2px solid red;
+
+                   h1{
+                       
+                       font-size: 4em;
+                       font-weight: bolder;
+                      font-family: 'Gotham';
+
+                   }
+
+                   h5{
+                       font-size: 1.18em;
+                       font-family: 'Gotham';
+                       font-weight: 500;
+                   }
+
+                   p{
+                       top: 1em;
+                       width: 60%;
+                       line-height: 121%;
+                       font-family:'Gotham';
+                       font-weight: 420;
+                       font-size: .7em;
+                       color: rgba(255, 255, 255, 0.842);
+                   }
+               }
+
+               #animal-type{
+                   line-height: 80%;
+                   background-position: 100% 50%;
+                   background-size: cover;
+                   right: 10em;
+                   height:100%;
+                   top: -17em;
+                   bottom: 6em;
+                   align-self: flex-end;
+                   display: flex;
+                   width: 200px;
+                  //overflow: hidden;
+                   
+                   flex-direction: column;
+                   
+                  // border: 2px solid red;
+
+
+                   h5{
+                       font-family: 'Gotham';
+                       font-weight: 480;
+                       font-size:0.75em;
+                       padding-top: 1.3em;
+                   }
+
+                   p{
+                       padding-top: 0.7em;
+                       width: 120%;
+                       line-height: 122%;
+                       font-weight: 415;
+                       font-family: 'Gotham';
+                       font-size: 0.6em;
+                       color: rgba(255, 255, 255, 0.822);
                    }
                }
 
