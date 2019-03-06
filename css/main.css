@@ -148,11 +148,11 @@ body #home #front #left-menu ul li {
   display: block;
 }
 
-body #home #front #center-container {
+body #home #front .center-container {
   width: calc(100% - 160px);
   top: 3em;
   bottom: -3em;
-  height: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,32 +161,33 @@ body #home #front #center-container {
       -ms-flex-direction: column;
           flex-direction: column;
   left: 180px;
+  position: fixed;
   color: white;
 }
 
-body #home #front #center-container #logo img {
+body #home #front .center-container #logo img {
   height: 50px;
   width: 80px;
 }
 
-body #home #front #center-container #title {
+body #home #front .center-container #title {
   width: 45%;
   top: 8em;
 }
 
-body #home #front #center-container #title h1 {
+body #home #front .center-container #title h1 {
   font-size: 4em;
   font-weight: bolder;
   font-family: 'Gotham';
 }
 
-body #home #front #center-container #title h5 {
+body #home #front .center-container #title h5 {
   font-size: 1.18em;
   font-family: 'Gotham';
   font-weight: 500;
 }
 
-body #home #front #center-container #title p {
+body #home #front .center-container #title p {
   top: 1em;
   width: 60%;
   line-height: 121%;
@@ -196,7 +197,7 @@ body #home #front #center-container #title p {
   color: rgba(255, 255, 255, 0.842);
 }
 
-body #home #front #center-container #animal-type {
+body #home #front .center-container #animal-type {
   line-height: 80%;
   background-position: 100% 50%;
   background-size: cover;
@@ -216,24 +217,24 @@ body #home #front #center-container #animal-type {
           flex-direction: column;
 }
 
-body #home #front #center-container #animal-type h5 {
+body #home #front .center-container #animal-type h5 {
   font-family: 'Gotham';
-  font-weight: 480;
-  font-size: 0.75em;
-  padding-top: 1.3em;
+  font-weight: 500;
+  font-size: 0.73em;
+  padding-top: 1.8em;
 }
 
-body #home #front #center-container #animal-type p {
-  padding-top: 0.7em;
+body #home #front .center-container #animal-type p {
+  padding-top: 0.5em;
   width: 120%;
   line-height: 122%;
   font-weight: 415;
   font-family: 'Gotham';
-  font-size: 0.6em;
+  font-size: 0.53em;
   color: rgba(255, 255, 255, 0.822);
 }
 
-body #home #front #center-container #footer {
+body #home #front .center-container .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,25 +247,52 @@ body #home #front #center-container #footer {
   bottom: 8em;
 }
 
-body #home #front #center-container #footer #left-footer {
+body #home #front .center-container .footer .left-footer {
   font-family: 'Gotham';
   font-weight: 420.25;
   font-size: .7em;
-  top: 1em;
+  top: 4.9em;
   color: rgba(255, 255, 255, 0.842);
   width: 27%;
   line-height: 121%;
 }
 
-body #home #front #center-container #footer #right-footer {
+body #home #front .center-container .footer .right-footer {
   right: -37em;
   width: 200px;
-  top: 2.8em;
+  top: 3.7em;
 }
 
-body #home #front #center-container #footer #right-footer a img {
+body #home #front .center-container .footer .right-footer a img {
   height: 12px;
   width: 14px;
   margin-left: 1.3em;
+}
+
+body #home #front .toggle-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  top: 0;
+  border: transparent;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 2px solid rgba(255, 255, 255, 0.075);
+  height: 100%;
+  width: 80px;
+  float: right;
+}
+
+body #home #front .toggle-menu .menu-trigger {
+  width: 30px;
+  height: 20px;
+  fill: white;
+  background: transparent;
+  top: 4em;
+  border: none;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
