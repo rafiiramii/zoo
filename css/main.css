@@ -219,18 +219,18 @@ body #home #front .center-container #animal-type {
 
 body #home #front .center-container #animal-type h5 {
   font-family: 'Gotham';
-  font-weight: 480;
-  font-size: 0.75em;
-  padding-top: 1.3em;
+  font-weight: 500;
+  font-size: 0.73em;
+  padding-top: 1.8em;
 }
 
 body #home #front .center-container #animal-type p {
-  padding-top: 0.7em;
+  padding-top: 0.5em;
   width: 120%;
   line-height: 122%;
   font-weight: 415;
   font-family: 'Gotham';
-  font-size: 0.6em;
+  font-size: 0.53em;
   color: rgba(255, 255, 255, 0.822);
 }
 
@@ -260,12 +260,39 @@ body #home #front .center-container .footer .left-footer {
 body #home #front .center-container .footer .right-footer {
   right: -37em;
   width: 200px;
-  top: 3.9em;
+  top: 3.7em;
 }
 
 body #home #front .center-container .footer .right-footer a img {
   height: 12px;
   width: 14px;
   margin-left: 1.3em;
+}
+
+body #home #front .toggle-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  top: 0;
+  border: transparent;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 2px solid rgba(255, 255, 255, 0.075);
+  height: 100%;
+  width: 80px;
+  float: right;
+}
+
+body #home #front .toggle-menu .menu-trigger {
+  width: 30px;
+  height: 20px;
+  fill: white;
+  background: transparent;
+  top: 4em;
+  border: none;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
