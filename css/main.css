@@ -161,12 +161,11 @@ body #home #front #center-container {
       -ms-flex-direction: column;
           flex-direction: column;
   left: 180px;
-  position: fixed;
   color: white;
 }
 
 body #home #front #center-container #logo img {
-  height: 45px;
+  height: 50px;
   width: 80px;
 }
 
@@ -192,7 +191,7 @@ body #home #front #center-container #title p {
   width: 60%;
   line-height: 121%;
   font-family: 'Gotham';
-  font-weight: 420;
+  font-weight: 420.25;
   font-size: .7em;
   color: rgba(255, 255, 255, 0.842);
 }
@@ -201,10 +200,10 @@ body #home #front #center-container #animal-type {
   line-height: 80%;
   background-position: 100% 50%;
   background-size: cover;
-  right: 10em;
+  right: 8em;
   height: 100%;
   top: -17em;
-  bottom: 6em;
+  bottom: 3em;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: -webkit-box;
@@ -232,5 +231,40 @@ body #home #front #center-container #animal-type p {
   font-family: 'Gotham';
   font-size: 0.6em;
   color: rgba(255, 255, 255, 0.822);
+}
+
+body #home #front #center-container #footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: calc(100% - 160px);
+  height: 70px;
+  bottom: 8em;
+}
+
+body #home #front #center-container #footer #left-footer {
+  font-family: 'Gotham';
+  font-weight: 420.25;
+  font-size: .7em;
+  top: 1em;
+  color: rgba(255, 255, 255, 0.842);
+  width: 27%;
+  line-height: 121%;
+}
+
+body #home #front #center-container #footer #right-footer {
+  right: -37em;
+  width: 200px;
+  top: 2.8em;
+}
+
+body #home #front #center-container #footer #right-footer a img {
+  height: 12px;
+  width: 14px;
+  margin-left: 1.3em;
 }
 /*# sourceMappingURL=main.css.map */
