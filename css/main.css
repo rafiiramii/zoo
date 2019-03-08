@@ -76,6 +76,12 @@ body #home {
 }
 
 body #home #bg {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
   width: 100%;
   height: 90vh;
   position: fixed;
@@ -116,10 +122,14 @@ body #home #front #left-menu {
 }
 
 body #home #front #left-menu a {
-  bottom: -450px;
-  margin-bottom: 1.7em;
+  bottom: -460px;
+  margin-bottom: 1.9em;
+  padding-bottom: 0.2em;
   left: 1em;
-  font-size: 0.8em;
+  font-family: 'Gotham';
+  font-weight: 420.4;
+  font-size: .63em;
+  color: rgba(255, 255, 255, 0.856);
 }
 
 body #home #front #left-menu ul {
@@ -170,24 +180,27 @@ body #home #front .center-container #logo img {
   width: 80px;
 }
 
-body #home #front .center-container #title {
+body #home #front .center-container .title {
   width: 45%;
   top: 8em;
 }
 
-body #home #front .center-container #title h1 {
+body #home #front .center-container .title h1 {
   font-size: 4em;
   font-weight: bolder;
   font-family: 'Gotham';
+  position: relative;
+  /* animation-duration: 1s;
+  animation-name: slideInLeft; */
 }
 
-body #home #front .center-container #title h5 {
+body #home #front .center-container .title h5 {
   font-size: 1.18em;
   font-family: 'Gotham';
   font-weight: 500;
 }
 
-body #home #front .center-container #title p {
+body #home #front .center-container .title p {
   top: 1em;
   width: 60%;
   line-height: 121%;
@@ -251,7 +264,7 @@ body #home #front .center-container .footer .left-footer {
   font-family: 'Gotham';
   font-weight: 420.25;
   font-size: .7em;
-  top: 4.9em;
+  top: 3.5em;
   color: rgba(255, 255, 255, 0.842);
   width: 27%;
   line-height: 121%;
@@ -295,4 +308,74 @@ body #home #front .toggle-menu .menu-trigger {
   border: none;
   font-weight: bold;
 }
+
+/* animation start here */
+  .slideInLeft{
+    display: inline-block;
+  animation-duration: 1s;
+  animation-name: slideInLeft;
+  backface-visibility: hidden;
+
+}
+  .slideInRight{
+      display: inline-block;
+    animation-name: slideInRight;
+    animation-duration: 1s;
+  
+  }
+
+  .slideDown{
+    display: inline-block;
+  
+    animation: 4s slideDown step-start(5);
+    backface-visibility: hidden;
+  }
+
+@keyframes  slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+
+
+
+@keyframes  slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+@keyframes  slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  
+  }
+
+  
+  
+  100% {
+    opacity: 1;
+    transform: translate(0);
+
+  }
+}
+
+
 /*# sourceMappingURL=main.css.map */

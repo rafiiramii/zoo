@@ -14,6 +14,14 @@ body{
        height: 100vh;
 
        #bg{
+
+
+        //animation 
+        animation-duration: 6s;
+
+  animation-iteration-count:1;
+  transition-timing-function: ease-in-out;
+  //end animation
            width: 100%;
            height: 90vh;
            position: fixed;
@@ -52,12 +60,17 @@ body{
                
                
                a{
-                bottom: -450px;
-                   margin-bottom: 1.7em;
+                bottom: -460px;
+                   margin-bottom: 1.9em;
+                   padding-bottom: 0.2em;
                 //    height: cal(100%-20px);
                    left:1em;
                 //    right: -1em;
-                   font-size: 0.8em;
+                font-family:'Gotham';
+                font-weight: 420.4;
+                font-size: .63em;
+                color: rgba(255, 255, 255, 0.856);
+
                }
 
            
@@ -111,7 +124,7 @@ body{
                    }
                }
 
-               #title{
+               .title{
                    width: 45%;
                    top: 8em;
                    //border:2px solid red;
@@ -121,8 +134,10 @@ body{
                        font-size: 4em;
                        font-weight: bolder;
                       font-family: 'Gotham';
-
+                      position:relative;
+                        animation-name: slideInLeft;
                    }
+                   
 
                    h5{
                        font-size: 1.18em;
@@ -190,7 +205,7 @@ body{
                      font-family: 'Gotham';
                      font-weight: 420.25;
                      font-size: .7em;
-                     top: 4.9em;
+                     top: 3.5em;
                      color: rgba(255, 255, 255, 0.842);
                      width: 27%;
                      line-height: 121%;
@@ -247,6 +262,8 @@ body{
                 //    svg::before{
                 //     content: "\f00d";
                 
+
+
                     
                 
                }
@@ -255,7 +272,8 @@ body{
        }
    }
 
-
-
+      
+          
+ 
 
 }
