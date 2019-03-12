@@ -312,7 +312,7 @@ body #home #front .toggle-menu .menu-trigger {
 /* animation start here */
   .slideInLeft{
     display: inline-block;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-name: slideInLeft;
   backface-visibility: hidden;
 
@@ -320,17 +320,32 @@ body #home #front .toggle-menu .menu-trigger {
   .slideInRight{
       display: inline-block;
     animation-name: slideInRight;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
   
   }
 
-  .slideDown{
-    display: inline-block;
-  
-    animation: 4s slideDown step-start(5);
-    backface-visibility: hidden;
+  .animal-desc{
+    
+    opacity: 0;
+    animation-name: slideInDown;
+    animation-duration: 15sms;
+    animation-delay: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
   }
-
+  .animal-desc:nth-child(1){animation-delay: 2.8s}
+.animal-desc:nth-child(2){animation-delay: 3s}
+.animal-desc:nth-child(3){animation-delay: 3.1s}
+.animal-desc:nth-child(4){animation-delay: 3.2s}
+.animal-desc:nth-child(5){animation-delay: 3.3s}
+.animal-desc:nth-child(6){animation-delay: 3.4s}
+.animal-desc:nth-child(7){animation-delay: 3.5s}
+.animal-desc:nth-child(8){animation-delay: 3.6s}
+ .zoomIn{
+   
+   animation: scale 7s linear  ;
+   
+ }
 @keyframes  slideInLeft {
   0% {
     opacity: 0;
@@ -377,5 +392,31 @@ body #home #front .toggle-menu .menu-trigger {
   }
 }
 
+@keyframes scale{
+  0% {
+    transform: scale(1.1);
+   
+  }
+    50% {
+    transform: scale(1);
+   
+  }
+}
 
-/*# sourceMappingURL=main.css.map */
+
+@keyframes slideInDown {
+  0%{
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    
+    opacity: 0;
+  }
+    50%{
+      opacity: 0.9;
+    }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
