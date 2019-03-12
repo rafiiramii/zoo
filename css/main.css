@@ -343,7 +343,7 @@ body #home #front .toggle-menu .menu-trigger {
 .animal-desc:nth-child(8){animation-delay: 3.6s}
  .zoomIn{
    
-   animation: scale 8s linear  ;
+   animation: scale 7s linear  ;
    
  }
 @keyframes  slideInLeft {
