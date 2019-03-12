@@ -312,7 +312,7 @@ body #home #front .toggle-menu .menu-trigger {
 /* animation start here */
   .slideInLeft{
     display: inline-block;
-  animation-duration: 0.5s;
+  animation-duration:0.9s;
   animation-name: slideInLeft;
   backface-visibility: hidden;
 
@@ -328,22 +328,37 @@ body #home #front .toggle-menu .menu-trigger {
     
     opacity: 0;
     animation-name: slideInDown;
-    animation-duration: 15sms;
-    animation-delay: .5s;
+    animation-duration: 15ms;
+    animation-delay: .45s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
   }
-  .animal-desc:nth-child(1){animation-delay: 2.8s}
-.animal-desc:nth-child(2){animation-delay: 3s}
-.animal-desc:nth-child(3){animation-delay: 3.1s}
-.animal-desc:nth-child(4){animation-delay: 3.2s}
-.animal-desc:nth-child(5){animation-delay: 3.3s}
-.animal-desc:nth-child(6){animation-delay: 3.4s}
-.animal-desc:nth-child(7){animation-delay: 3.5s}
-.animal-desc:nth-child(8){animation-delay: 3.6s}
+  .animal-desc:nth-child(1){animation-delay: 0.6s}
+.animal-desc:nth-child(2){animation-delay: 0.8s}
+.animal-desc:nth-child(3){animation-delay: 1s}
+.animal-desc:nth-child(4){animation-delay: 1.2s}
+.animal-desc:nth-child(5){animation-delay: 1.4s}
+.animal-desc:nth-child(6){animation-delay: 1.6s}
+.animal-desc:nth-child(7){animation-delay: 1.8s}
+.animal-desc:nth-child(8){animation-delay: 2s}
+   
+    .animal-desc:hover:before{
+      content: " ";
+    
+      display: block;
+      height: 2.2px;
+      width: 30px;
+      margin-top:1em;
+      top: 14px;
+      left: -45px;
+      position:absolute;
+      float: left;
+      background-color: #b35417;
+    }
+
  .zoomIn{
    
-   animation: scale 7s linear  ;
+   animation: scale 2.5s linear   ;
    
  }
 @keyframes  slideInLeft {
@@ -375,7 +390,7 @@ body #home #front .toggle-menu .menu-trigger {
   }
 }
 
-
+/* 
 @keyframes  slideDown {
   0% {
     opacity: 0;
@@ -390,14 +405,14 @@ body #home #front .toggle-menu .menu-trigger {
     transform: translate(0);
 
   }
-}
+} */
 
 @keyframes scale{
   0% {
-    transform: scale(1.1);
+    transform: scale(1.18);
    
   }
-    50% {
+    100% {
     transform: scale(1);
    
   }
