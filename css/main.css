@@ -1,5 +1,6 @@
 @import url(/home/rafyramy/myPracticeProj/Zoo/css/reset.css);
 @import url(/home/rafyramy/myPracticeProj/Zoo/css/flex.css);
+@import url(/home/rafyramy/myPracticeProj/Zoo/css/animal.css);
 @font-face {
   font-family: 'Gotham';
   src: url("../fonts/Gotham-Black.otf");
@@ -120,16 +121,18 @@ body #home #front #left-menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: left;
 }
 
 body #home #front #left-menu a {
   bottom: -460px;
   margin-bottom: 1.9em;
   padding-bottom: 0.2em;
-  left: 1em;
+  left: 1.5em;
   font-family: 'Gotham';
   font-weight: 420.4;
-  font-size: .63em;
+  line-height: 150%;
+  font-size: .57em;
   color: rgba(255, 255, 255, 0.856);
 }
 
@@ -146,14 +149,14 @@ body #home #front #left-menu ul {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 300px;
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 
 body #home #front #left-menu ul li {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 2.1em;
   font-weight: bold;
-  left: 1em;
+  left: 0.85em;
   line-height: 70%;
   color: white;
   display: block;

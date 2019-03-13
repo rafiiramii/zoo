@@ -4,6 +4,9 @@
 @import "reset";
 
 @import "flex";
+
+@import "animal.css";
+
 body{
     background-color: black;
     color: rgba(255, 255, 255, 0.486);
@@ -57,6 +60,7 @@ body{
                background-size: cover;
                display: flex;
                flex-direction: column;
+               text-align: left;
                
                
                a{
@@ -64,11 +68,12 @@ body{
                    margin-bottom: 1.9em;
                    padding-bottom: 0.2em;
                 //    height: cal(100%-20px);
-                   left:1em;
+                   left:1.5em;
                 //    right: -1em;
                 font-family:'Gotham';
                 font-weight: 420.4;
-                font-size: .63em;
+                line-height: 150%;
+                font-size: .57em;
                 color: rgba(255, 255, 255, 0.856);
 
                }
@@ -84,14 +89,14 @@ body{
                flex-direction: column;
                //border: 2px solid red;
                height: 300px;
-               padding-top: 1em;
+               padding-top: 1.5em;
 
 
                li{
                    text-decoration: none;
-                   font-size: 2em;
+                   font-size: 2.1em;
                    font-weight: bold;
-                   left: 1em;
+                   left: 0.85em;
                    line-height: 70%;
                    
                    color: white;
