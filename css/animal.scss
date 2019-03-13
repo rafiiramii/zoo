@@ -1,0 +1,27 @@
+
+@import "fonts";
+
+@import "reset";
+
+@import "flex";
+
+@import "main.css";
+
+body{
+    #home{
+        #front{
+            .center-container{
+                .title{
+                    p{
+                        padding-bottom: 2em;
+                        width: 95%;
+                        line-height: 121%;
+                        font-family:'Gotham';
+                        font-weight: 420.25;
+                        font-size: .62em;
+                    }
+                }
+            }
+        }
+    }
+}
