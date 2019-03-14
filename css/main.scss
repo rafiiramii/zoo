@@ -1,11 +1,11 @@
 
-@import "fonts";
+ @import "fonts";
 
- @import "reset.css";
+//   @import "reset.css";
 
- @import "flex.css";
+//   @import "flex.css";
 
-@import "animal.css";
+//@import "animal.css";
 
 body{
     background-color: black;
@@ -174,24 +174,29 @@ body{
                    flex-direction: column;
                    
                   // border: 2px solid red;
-
-
-                   h5{
-                       font-family: 'Gotham';
-                       font-weight: 500;
-                       font-size:0.73em;
-                       padding-top: 1.8em;
+                     
+                   .animal-desc{
+                       opacity: 1;
+                        
+                    h5{
+                        font-family: 'Gotham';
+                        font-weight: 500;
+                        font-size:0.73em;
+                        padding-top: 1.8em;
+                    }
+ 
+                    p{
+                        padding-top: 0.5em;
+                        width: 120%;
+                        line-height: 122%;
+                        font-weight: 415;
+                        font-family: 'Gotham';
+                        font-size: 0.53em;
+                        color: rgba(255, 255, 255, 0.822);
+                    }
                    }
 
-                   p{
-                       padding-top: 0.5em;
-                       width: 120%;
-                       line-height: 122%;
-                       font-weight: 415;
-                       font-family: 'Gotham';
-                       font-size: 0.53em;
-                       color: rgba(255, 255, 255, 0.822);
-                   }
+                 
 
                    
 
@@ -315,9 +320,9 @@ body{
 
   .animal-desc{
     
-    opacity: 0;
+    
     animation-name: slideInDown;
-    animation-duration: 15ms;
+    animation-duration: 3s;
     animation-delay: .45s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
