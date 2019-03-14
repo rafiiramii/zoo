@@ -14,6 +14,13 @@ body #home #front .center-container #animal-type {
   bottom: 2em;
 }
 
+body #home #front .center-container #animal-type h5 {
+  font-family: 'Gotham';
+  font-weight: 500;
+  font-size: 0.73em;
+  padding-top: 1.8em;
+}
+
 body #home #front .center-container #animal-type ul {
   bottom: -280px;
   display: -webkit-box;
