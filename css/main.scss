@@ -1,9 +1,9 @@
 
 @import "fonts";
 
-@import "reset";
+ @import "reset.css";
 
-@import "flex";
+ @import "flex.css";
 
 @import "animal.css";
 
@@ -51,10 +51,7 @@ body{
            #left-menu{
                width: 80px;
                height: 100%;
-               
-               
                position: fixed;
-               
                background-color: rgba(255, 255, 255, 0.027);
                background-position: 100% 50%;
                background-size: cover;

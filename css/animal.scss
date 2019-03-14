@@ -1,9 +1,9 @@
 
 @import "fonts";
 
-@import "reset";
+ @import "reset.css";
 
-@import "flex";
+ @import "flex.css";
 
 @import "main.css";
 
@@ -21,7 +21,71 @@ body{
                         font-size: .62em;
                     }
                 }
+
+                #animal-type{
+                    
+                    background-position: 50% 50%;
+                    //border: 2px solid red;
+                    top: -22em;
+                    right: 5em;
+                    bottom: 2em;
+                   // background: rgba(0, 0, 0, 0.233);
+                    
+
+
+                      
+           ul{
+            
+               
+            //border: 3px solid red;
+            bottom: -280px;
+            display: flex;
+            //justify-content: flex-start;
+            flex-direction: row;
+            border: 2px solid red;
+            height: 30px;
+            position: fixed;
+
+            padding-top: 1.5em;
+
+
+            li{
+                text-decoration: none;
+                font-size: 2.1em;
+                font-weight: bold;
+                left:0em;
+               // line-height: 30%;
+                margin-right: .3em;
+                color: white;
+                
+                display: block;
+                
+//border: 2px solid red;
+     
             }
-        }
+         }
+                    
+                
+            
+            }
+
+            .footer{
+                .right-footer{
+                    right: -40em;
+                 }
+            }
+            
+        
     }
+}
+
+}
+
+}
+//animations
+#animal-type{
+    display: inline-block;
+  animation-name: slideInRight;
+  animation-duration: 1.5s;
+
 }

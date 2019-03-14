@@ -73,4 +73,48 @@ body #home #front .center-container .title p {
   font-weight: 420.25;
   font-size: .62em;
 }
+
+body #home #front .center-container #animal-type {
+  background-position: 50% 50%;
+  top: -22em;
+  right: 5em;
+  bottom: 2em;
+}
+
+body #home #front .center-container #animal-type ul {
+  bottom: -280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid red;
+  height: 30px;
+  position: fixed;
+  padding-top: 1.5em;
+}
+
+body #home #front .center-container #animal-type ul li {
+  text-decoration: none;
+  font-size: 2.1em;
+  font-weight: bold;
+  left: 0em;
+  margin-right: .3em;
+  color: white;
+  display: block;
+}
+
+body #home #front .center-container .footer .right-footer {
+  right: -40em;
+}
+
+#animal-type {
+  display: inline-block;
+  -webkit-animation-name: slideInRight;
+          animation-name: slideInRight;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
 /*# sourceMappingURL=animal.css.map */
