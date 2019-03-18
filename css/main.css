@@ -1,77 +1,13 @@
-@font-face {
-  font-family: 'Gotham';
-  src: url("../fonts/Gotham-Black.otf");
-  font-weight: bolder;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("../fonts/GothamBold.ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("../fonts/GothamBoldItalic.ttf");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("../fonts/GothamBook.ttf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("../fonts/GothamBookItalic.ttf");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("../fonts/GothamLight.ttf");
-  font-weight: 420;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("../fonts/GothamLightItalic.ttf");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("../fonts/GothamMedium.ttf");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Gotham';
-  font-weight: 300;
-  src: url("../fonts/Gotham-Thin.otf");
-}
-
-@font-face {
-  font-family: 'Gotham';
-  font-weight: 300;
-  font-style: italic;
-  src: url("../fonts/Gotham-ThinItalic.otf");
-}
-
 body {
   background-color: black;
   color: rgba(255, 255, 255, 0.486);
   font-family: 'Gotham';
-  /* animation start here */
 }
 
 body #home {
   width: 100vw;
   height: 100vh;
+  /* animation start here */
 }
 
 body #home #bg {
@@ -252,19 +188,24 @@ body #home #front .center-container #animal-type .animal-desc p {
   color: rgba(255, 255, 255, 0.822);
 }
 
-body #home #front .center-container #animal-type .layouts {
+body #home #front .center-container #animal-type #menu-item {
   top: -20em;
   color: rgba(255, 255, 255, 0.651);
   background-color: #b35417;
-  display: none;
-}
-
-body #home #front .center-container #animal-type .layouts .menu-name {
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
   line-height: 255%;
   text-transform: uppercase;
   font-size: 1.18em;
   font-family: 'Gotham';
   font-weight: 500;
+}
+
+body #home #front .center-container #animal-type #menu-item.open {
+  opacity: .975;
+  left: 0;
+  pointer-events: auto;
 }
 
 body #home #front .center-container .footer {
@@ -317,19 +258,25 @@ body #home #front .toggle-menu {
   height: 100%;
   width: 80px;
   float: right;
+  z-index: 2;
 }
 
 body #home #front .toggle-menu .menu-trigger {
   width: 30px;
   height: 20px;
   fill: white;
+  z-index: 2;
   background: transparent;
   top: 4em;
   border: none;
   font-weight: bold;
 }
 
-body .slideInLeft {
+body #home #front .toggle-menu .menu-trigger svg::before {
+  content: "\f00d";
+}
+
+body #home .slideInLeft {
   display: inline-block;
   -webkit-animation-duration: 0.9s;
           animation-duration: 0.9s;
@@ -339,7 +286,7 @@ body .slideInLeft {
           backface-visibility: hidden;
 }
 
-body .slideInRight {
+body #home .slideInRight {
   display: inline-block;
   -webkit-animation-name: slideInRight;
           animation-name: slideInRight;
@@ -347,7 +294,7 @@ body .slideInRight {
           animation-duration: 1.5s;
 }
 
-body .animal-desc {
+body #home .animal-desc {
   -webkit-animation-name: slideInDown;
           animation-name: slideInDown;
   -webkit-animation-duration: 3s;
@@ -360,47 +307,47 @@ body .animal-desc {
           animation-fill-mode: forwards;
 }
 
-body .animal-desc:nth-child(1) {
+body #home .animal-desc:nth-child(1) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-body .animal-desc:nth-child(2) {
+body #home .animal-desc:nth-child(2) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-body .animal-desc:nth-child(3) {
+body #home .animal-desc:nth-child(3) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-body .animal-desc:nth-child(4) {
+body #home .animal-desc:nth-child(4) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-body .animal-desc:nth-child(5) {
+body #home .animal-desc:nth-child(5) {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
 
-body .animal-desc:nth-child(6) {
+body #home .animal-desc:nth-child(6) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 
-body .animal-desc:nth-child(7) {
+body #home .animal-desc:nth-child(7) {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
 }
 
-body .animal-desc:nth-child(8) {
+body #home .animal-desc:nth-child(8) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
-body .animal-desc:hover:before {
+body #home .animal-desc:hover:before {
   content: " ";
   display: block;
   height: 2.2px;
@@ -413,7 +360,7 @@ body .animal-desc:hover:before {
   background-color: #b35417;
 }
 
-body .zoomIn {
+body #home .zoomIn {
   -webkit-animation: scale 2.5s linear;
           animation: scale 2.5s linear;
 }
