@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-
+    <script>
+            function toggleMenu() {
+                console.log("clicked")
+            }
+         </script>
     
 
     <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -44,29 +48,13 @@
             </ul>
         </div>
         <div class="toggle-menu">
-            <button class="menu-trigger" onclick="toggleMenu(); return false;" type="button" >
+            <button  onclick="toggleMenu()" class="menu-trigger">
                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
                     <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;isolation:auto;mix-blend-mode:normal" d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z" font-weight= "400" font-family="Gotham" white-space="normal" overflow="visible"/>
                 </svg> 
                 
             </button>
-            <script>
-                    // var menuIsOpen = false;
-                     // var menuWrapper = $("#menu-item");
-                     //var menuWrapper = document.querySelector("#menu-item");
-                     function toggleMenu(){
-                         alert("ok")
-                         // if (!menuIsOpen){
-                         //     // menuWrapper.addClass("open");
-                         //     menuWrapper.classList.add("open");
-                         //     menuIsOpen = true;
-                         // }
-                         // else{
-                         //     // menuWrapper.removeClass("open");
-                         //     menuWrapper.classList.remove("open");
-                         //     menuIsOpen = false
-                     }
-                 </script>  
+           
             
         </div>
 
@@ -121,9 +109,9 @@
                 </div>
 
                
-                    <div class="layouts"  id="menu-list">
+                    <div class="layouts"  id="menu-item">
                         <a  class="menu-name" href="#">KILIMANJARO</a>
-                        <a class="menu-name" href="#">ANIMALS</a>
+                        <a class="menu-name" href="http://127.0.0.1:5500/animal.html">ANIMALS</a>
                         <a class="menu-name"  href="#">NATIONAL PARKS</a>
                         <a class="menu-name"  href="#">ZOOS</a>
                         <a class="menu-name"  href="#">DESTINATIONS</a>
@@ -155,11 +143,27 @@
 
              </section>
 
-             <script src="js/main.js"></script>
-        
+             <!-- <script src="js/main.js"></script> -->
+                
+              
 
-
-
+        <script>
+             var menuIsOpen = false;
+    // var menuWrapper = $("#menu-item");
+    var menuWrapper = document.querySelector("#menu-item");
+    function toggleMenu(){
+        if (!menuIsOpen){
+             //menuWrapper.addClass("open");
+            menuWrapper.classList.add("open");
+            menuIsOpen = true;
+        }
+        else{
+            // menuWrapper.removeClass("open");
+            menuWrapper.classList.remove("open");
+            menuIsOpen = false;
+        }
+    }
+        </script>
     
    
 </body>
