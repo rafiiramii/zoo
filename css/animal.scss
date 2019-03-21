@@ -29,6 +29,7 @@ body{
                     top: -22em;
                     right: 5em;
                     bottom: 1em;
+                    z-index: 1;
                    // background: rgba(0, 0, 0, 0.233);
                     
                    h5{
@@ -84,8 +85,9 @@ body{
             }
 
             .footer{
+                 top: 35em;
                 .right-footer{
-                    right: -40em;
+                    right: -37.5em;
                  }
             }
             
