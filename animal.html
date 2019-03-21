@@ -136,11 +136,11 @@
                 </div>
                  
                
-                    <div class="layouts"  id="menu-list">
+                    <div class="layouts"  id="menu-item">
                         <a  class="menu-name" href="#">KILIMANJARO</a>
                         <a class="menu-name" href="#">ANIMALS</a>
                         <a class="menu-name"  href="#">NATIONAL PARKS</a>
-                        <a class="menu-name"  href="#">ZOOS</a>
+                        <a class="menu-name"  href="http://127.0.0.1:5500/main.html">ZOOS</a>
                         <a class="menu-name"  href="#">DESTINATIONS</a>
                         <a class="menu-name"  href="#">PEOPLE</a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor </p>
@@ -170,6 +170,24 @@
 
 
              </section>
+             <script>
+                    var menuIsOpen = false;
+           // var menuWrapper = $("#menu-item");
+           var menuWrapper = document.querySelector("#menu-item");
+           function toggleMenu(){
+               if (!menuIsOpen){
+                    //menuWrapper.addClass("open");
+                   menuWrapper.classList.add("open");
+                   menuIsOpen = true;
+               }
+               else{
+                   // menuWrapper.removeClass("open");
+                   menuWrapper.classList.remove("open");
+                   menuIsOpen = false;
+               }
+           }
+               </script>
+           
 
     
    

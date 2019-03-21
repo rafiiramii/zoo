@@ -2,12 +2,12 @@ body {
   background-color: black;
   color: rgba(255, 255, 255, 0.486);
   font-family: 'Gotham';
+  /* animation start here */
 }
 
 body #home {
   width: 100vw;
   height: 100vh;
-  /* animation start here */
 }
 
 body #home #bg {
@@ -191,10 +191,9 @@ body #home #front .center-container #animal-type .animal-desc p {
 body #home #front .center-container #animal-type #menu-item {
   top: -20em;
   color: rgba(255, 255, 255, 0.651);
-  background-color: #b35417;
-  z-index: 10;
+  background-color: #b353176e;
+  display: none;
   pointer-events: none;
-  opacity: 0;
   line-height: 255%;
   text-transform: uppercase;
   font-size: 1.18em;
@@ -202,16 +201,22 @@ body #home #front .center-container #animal-type #menu-item {
   font-weight: 500;
 }
 
-body #home #front .center-container #animal-type #menu-item.open {
-  opacity: .975;
-  left: 0;
-  pointer-events: auto;
+body #home #front .center-container #animal-type p {
+  padding-top: 0.5em;
+  width: 120%;
+  line-height: 122%;
+  font-weight: 415;
+  font-family: 'Gotham';
+  text-transform: none;
+  font-size: 0.53em;
+  color: rgba(255, 255, 255, 0.822);
 }
 
-body #home #front .center-container .footer {
+body #home #front .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 3;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -221,7 +226,7 @@ body #home #front .center-container .footer {
   bottom: 8em;
 }
 
-body #home #front .center-container .footer .left-footer {
+body #home #front .footer .left-footer {
   font-family: 'Gotham';
   font-weight: 420.25;
   font-size: .7em;
@@ -231,19 +236,19 @@ body #home #front .center-container .footer .left-footer {
   line-height: 121%;
 }
 
-body #home #front .center-container .footer .right-footer {
+body #home #front .footer .right-footer {
   right: -37em;
   width: 200px;
   top: 3.7em;
 }
 
-body #home #front .center-container .footer .right-footer a img {
+body #home #front .footer .right-footer a img {
   height: 12px;
   width: 14px;
   margin-left: 1.3em;
 }
 
-body #home #front .toggle-menu {
+body #home .toggle-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +266,7 @@ body #home #front .toggle-menu {
   z-index: 2;
 }
 
-body #home #front .toggle-menu .menu-trigger {
+body #home .toggle-menu .menu-trigger {
   width: 30px;
   height: 20px;
   fill: white;
@@ -272,11 +277,7 @@ body #home #front .toggle-menu .menu-trigger {
   font-weight: bold;
 }
 
-body #home #front .toggle-menu .menu-trigger svg::before {
-  content: "\f00d";
-}
-
-body #home .slideInLeft {
+body .slideInLeft {
   display: inline-block;
   -webkit-animation-duration: 0.9s;
           animation-duration: 0.9s;
@@ -286,7 +287,7 @@ body #home .slideInLeft {
           backface-visibility: hidden;
 }
 
-body #home .slideInRight {
+body .slideInRight {
   display: inline-block;
   -webkit-animation-name: slideInRight;
           animation-name: slideInRight;
@@ -294,60 +295,59 @@ body #home .slideInRight {
           animation-duration: 1.5s;
 }
 
-body #home .animal-desc {
+body .animal-desc {
+  pointer-events: none;
   -webkit-animation-name: slideInDown;
           animation-name: slideInDown;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: .45s;
-          animation-delay: .45s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
-body #home .animal-desc:nth-child(1) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-body #home .animal-desc:nth-child(2) {
+body .animal-desc:nth-child(1) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-body #home .animal-desc:nth-child(3) {
+body .animal-desc:nth-child(2) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-body #home .animal-desc:nth-child(4) {
+body .animal-desc:nth-child(3) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-body #home .animal-desc:nth-child(5) {
+body .animal-desc:nth-child(4) {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
 
-body #home .animal-desc:nth-child(6) {
+body .animal-desc:nth-child(5) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 
-body #home .animal-desc:nth-child(7) {
+body .animal-desc:nth-child(6) {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
 }
 
-body #home .animal-desc:nth-child(8) {
+body .animal-desc:nth-child(7) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
-body #home .animal-desc:hover:before {
+body .animal-desc:nth-child(8) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+body .animal-desc:hover:before {
   content: " ";
   display: block;
   height: 2.2px;
@@ -360,7 +360,7 @@ body #home .animal-desc:hover:before {
   background-color: #b35417;
 }
 
-body #home .zoomIn {
+body .zoomIn {
   -webkit-animation: scale 2.5s linear;
           animation: scale 2.5s linear;
 }
@@ -441,33 +441,27 @@ body #home .zoomIn {
 
 @-webkit-keyframes slideInDown {
   0% {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     opacity: 0;
-  }
-  50% {
-    opacity: 0.9;
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
 @keyframes slideInDown {
   0% {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     opacity: 0;
-  }
-  50% {
-    opacity: 0.9;
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 /*# sourceMappingURL=main.css.map */
