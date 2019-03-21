@@ -178,6 +178,7 @@
                      
                    .animal-desc{
                        opacity: 1;
+                       z-index: 3;
                         
                     h5{
                         font-family: 'Gotham';
@@ -202,20 +203,25 @@
                    
 
                   #menu-item{
-                      top: -20em;
-                      color: rgba(255, 255, 255, 0.651);
-                      background-color: #b353176e;
+                      top: 4.5em;
+                      bottom: 3em;
+                      color: rgba(255, 255, 255, 0.842);
+                      //background-color: #b353176e;
                       display: none;
-                   //  z-index: 2;
-                     pointer-events:none;
+                    z-index: 55;
+                     //pointer-events:none;
                     // opacity: 0;
-                     line-height: 255%;
+                     line-height: 300%;
                           text-transform: uppercase;
-                      font-size: 1.18em;
+                      font-size: 1em;
                      font-family: 'Gotham';
                      font-weight: 500;
                   
                
+                //  .menu-name{
+                //    z-index: 77;
+                //  }
+
                }
               //  #menu-item.open{
               //   opacity: .975;
@@ -226,12 +232,12 @@
 
                 p{
                   padding-top: 0.5em;
-                        width: 120%;
+                        width: 100%;
                         line-height: 122%;
                         font-weight: 415;
                         font-family: 'Gotham';
                         text-transform: none;
-                        font-size: 0.53em;
+                        font-size: 0.7em;
                         color: rgba(255, 255, 255, 0.822);
                 }
                }
@@ -246,10 +252,12 @@
                   // z-index: 3;
                    flex-direction: row;
                    width: calc(100% - 160px);
-                   height: 70px;
+                   height: 50px;
                    //overflow: hidden;
                    //border: 2px solid red;
-                   bottom: 8em;
+                   top: 33.5em;
+                   position: fixed;
+                  line-height: 200%;
 
                  .left-footer{
                      font-family: 'Gotham';
@@ -265,9 +273,9 @@
                      //display: flex;
                     // flex-direction: row;
                     // justify-content: flex-start;
-                     right: -37em;
+                     right: -35em;
                      width: 200px;
-                     top: 3.7em;
+                     top: 2em;
                    // border: 2px solid red;
 
                     a{

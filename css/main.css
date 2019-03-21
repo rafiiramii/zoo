@@ -169,6 +169,7 @@ body #home #front .center-container #animal-type {
 
 body #home #front .center-container #animal-type .animal-desc {
   opacity: 1;
+  z-index: 3;
 }
 
 body #home #front .center-container #animal-type .animal-desc h5 {
@@ -189,26 +190,26 @@ body #home #front .center-container #animal-type .animal-desc p {
 }
 
 body #home #front .center-container #animal-type #menu-item {
-  top: -20em;
-  color: rgba(255, 255, 255, 0.651);
-  background-color: #b353176e;
+  top: 4.5em;
+  bottom: 3em;
+  color: rgba(255, 255, 255, 0.842);
   display: none;
-  pointer-events: none;
-  line-height: 255%;
+  z-index: 55;
+  line-height: 300%;
   text-transform: uppercase;
-  font-size: 1.18em;
+  font-size: 1em;
   font-family: 'Gotham';
   font-weight: 500;
 }
 
 body #home #front .center-container #animal-type p {
   padding-top: 0.5em;
-  width: 120%;
+  width: 100%;
   line-height: 122%;
   font-weight: 415;
   font-family: 'Gotham';
   text-transform: none;
-  font-size: 0.53em;
+  font-size: 0.7em;
   color: rgba(255, 255, 255, 0.822);
 }
 
@@ -216,14 +217,15 @@ body #home #front .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 3;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   width: calc(100% - 160px);
-  height: 70px;
-  bottom: 8em;
+  height: 50px;
+  top: 33.5em;
+  position: fixed;
+  line-height: 200%;
 }
 
 body #home #front .footer .left-footer {
@@ -237,9 +239,9 @@ body #home #front .footer .left-footer {
 }
 
 body #home #front .footer .right-footer {
-  right: -37em;
+  right: -35em;
   width: 200px;
-  top: 3.7em;
+  top: 2em;
 }
 
 body #home #front .footer .right-footer a img {
