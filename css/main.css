@@ -161,7 +161,7 @@ body #home #front .center-container #animal-type {
   display: -ms-flexbox;
   display: flex;
   width: 200px;
-  z-index: 35;
+  z-index: 3;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -170,7 +170,7 @@ body #home #front .center-container #animal-type {
 
 body #home #front .center-container #animal-type .animal-desc {
   opacity: 1;
-  z-index: 52;
+  z-index: 2;
 }
 
 body #home #front .center-container #animal-type .animal-desc h5 {
@@ -300,56 +300,60 @@ body .slideInRight {
 }
 
 body .animal-desc {
-  z-index: 45;
-  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   -webkit-animation-name: slideInDown;
           animation-name: slideInDown;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: inherit;
+          animation-direction: inherit;
 }
 
 body .animal-desc:nth-child(1) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+body .animal-desc:nth-child(2) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+body .animal-desc:nth-child(3) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-body .animal-desc:nth-child(2) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-body .animal-desc:nth-child(3) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
 body .animal-desc:nth-child(4) {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  -webkit-animation-delay: 0.95s;
+          animation-delay: 0.95s;
 }
 
 body .animal-desc:nth-child(5) {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
+  -webkit-animation-delay: 1.15s;
+          animation-delay: 1.15s;
 }
 
 body .animal-desc:nth-child(6) {
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
 }
 
 body .animal-desc:nth-child(7) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.35s;
+          animation-delay: 1.35s;
 }
 
 body .animal-desc:nth-child(8) {
-  -webkit-animation-delay: 2.2s;
-          animation-delay: 2.2s;
+  -webkit-animation-delay: 1.45s;
+          animation-delay: 1.45s;
 }
 
 body .animal-desc:hover:before {
@@ -366,8 +370,8 @@ body .animal-desc:hover:before {
 }
 
 body .zoomIn {
-  -webkit-animation: scale 2.5s linear;
-          animation: scale 2.5s linear;
+  -webkit-animation: scale 2.7s linear;
+          animation: scale 2.7s linear;
 }
 
 @-webkit-keyframes slideInLeft {
@@ -446,27 +450,37 @@ body .zoomIn {
 
 @-webkit-keyframes slideInDown {
   0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
     -webkit-transform: translateY(100px);
             transform: translateY(100px);
-    opacity: 0;
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
 }
 
 @keyframes slideInDown {
   0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
     -webkit-transform: translateY(100px);
             transform: translateY(100px);
-    opacity: 0;
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
 }
 /*# sourceMappingURL=main.css.map */

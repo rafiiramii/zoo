@@ -170,7 +170,7 @@
                    align-self: flex-end;
                    display: flex;
                    width: 200px;
-                   z-index: 35;
+                   z-index: 3;
                   //overflow: hidden;
                    
                    flex-direction: column;
@@ -179,7 +179,7 @@
                      
                    .animal-desc{
                        opacity: 1;
-                       z-index: 52;
+                       z-index: 2;
                         
                     h5{
                         font-family: 'Gotham';
@@ -351,27 +351,30 @@
   }
 
   .animal-desc{
-    z-index: 45;
-    pointer-events: none;
-
+   // z-index: 45;
+  // pointer-events: none;
+     backface-visibility: hidden;
     animation-name: slideInDown;
-    animation-duration: 2s;
-    animation-delay: .6s;
-    animation-timing-function: ease-in-out;
+    animation-duration:1.5s;
+    animation-delay: 0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+
         //animation-fill-mode: forwards;
       }
-      .animal-desc:nth-child(1){animation-delay: 0.8s}
-    .animal-desc:nth-child(2){animation-delay: 1s}
-    .animal-desc:nth-child(3){animation-delay: 1.2s}
-    .animal-desc:nth-child(4){animation-delay: 1.4s}
-    .animal-desc:nth-child(5){animation-delay: 1.6s}
-    .animal-desc:nth-child(6){animation-delay: 1.8s}
-    .animal-desc:nth-child(7){animation-delay: 2s}
-    .animal-desc:nth-child(8){animation-delay: 2.2s}
+      
+      .animal-desc:nth-child(1){animation-delay: 0.6s}
+    .animal-desc:nth-child(2){animation-delay: 0.75s}
+    .animal-desc:nth-child(3){animation-delay: 0.8s}
+    .animal-desc:nth-child(4){animation-delay: 0.95s}
+    .animal-desc:nth-child(5){animation-delay: 1.15s}
+    .animal-desc:nth-child(6){animation-delay: 1.25s}
+    .animal-desc:nth-child(7){animation-delay: 1.35s}
+    .animal-desc:nth-child(8){animation-delay: 1.45s}
       
     .animal-desc:hover:before{
       content: " ";
-    
       display: block;
       height: 2.2px;
       width: 30px;
@@ -390,7 +393,7 @@
 
       .zoomIn{
         
-        animation: scale 2.5s linear   ;
+        animation: scale 2.7s linear   ;
         
       }
       @keyframes  slideInLeft {
@@ -439,15 +442,16 @@
           0%{
             //-webkit-transform: translate3d(0, -100%, 0);
           // transform: translate3d(0, -100%, 0);
-          transform: translateY(100px);
-            opacity: 0;
+          transform: translateY(0);
+            opacity: 1;
           }
-            // 50%{
-            //   opacity: 0.9;
-            // }
+             70%{
+              opacity: 0.9;
+              transform: translateY(100px);
+           }
           100% {
             opacity: 1;
-            transform: translate(0)
+            transform: translateY(100%)
             //-webkit-transform: translate3d(0, 0, 0);
           // transform: translate3d(0, 0, 0);
           }
