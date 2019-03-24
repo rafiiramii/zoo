@@ -170,6 +170,7 @@
                    align-self: flex-end;
                    display: flex;
                    width: 200px;
+                   z-index: 35;
                   //overflow: hidden;
                    
                    flex-direction: column;
@@ -178,12 +179,12 @@
                      
                    .animal-desc{
                        opacity: 1;
-                       z-index: 3;
+                       z-index: 52;
                         
                     h5{
                         font-family: 'Gotham';
                         font-weight: 500;
-                        font-size:0.73em;
+                        font-size:0.88em;
                         padding-top: 1.8em;
                     }
  
@@ -318,6 +319,7 @@
                    top:4em;
                    border: none;
                    font-weight: bold;
+                   text-decoration: none;
 
               //      svg::before{
               //       content: "\f00d";
@@ -349,7 +351,7 @@
   }
 
   .animal-desc{
-    
+    z-index: 45;
     pointer-events: none;
 
     animation-name: slideInDown;
