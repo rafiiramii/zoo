@@ -392,6 +392,23 @@
     //   pointer-events: auto;
     // }
 
+
+
+      .menu-name:hover:before{
+        content: " ";
+        display: block;
+        height: 2.2px;
+        width: 28.5px;
+        margin-top:.1em;
+        top: 10px;
+        left: -40px;
+        position:absolute;
+        float: left;
+        background-color: #b35417;
+
+      }
+
+
       .zoomIn{
         
         animation: scale 2.7s linear   ;
