@@ -1,0 +1,144 @@
+
+// @import "fonts";
+
+//  @import "reset.css";
+
+//   @import "flex.css";
+
+// @import "main.css";
+
+body{
+    #home{
+        // #bg{
+        //     transition: all 0.5s ease;
+        //     transform: scale(1.2);
+        //      left: 6em;        
+        // }
+        #front{
+            .center-container{
+                .title{
+                    p{
+                        padding-bottom: 2em;
+                        width: 95%;
+                        line-height: 121%;
+                        font-family:'Gotham';
+                        font-weight: 420.25;
+                        font-size: .62em;
+                    }
+                }
+
+                #animal-type{
+                    
+                    background-position: 100% 50%;
+                   // border: 2px solid red;
+                    top: -22em;
+                    right: 5em;
+                    bottom: 1em;
+                    z-index: 1;
+                    height: 100%;
+                   // white-space: nowrap;
+                    // vertical-align: top;
+                 display: inline-block;
+                    background: rgba(0, 0, 0, 0.075);
+                    
+                   h5{
+                    font-family: 'Gotham';
+                    font-weight: 500;
+                    font-size:0.73em;
+                    padding-top: 1.8em;
+                }
+
+          
+            ul{
+            
+               
+                //border: 3px solid red;
+                //bottom: -580px;
+               top: -0.5em;
+                display: flex;
+                //justify-content: flex-start;
+                flex-direction: row;
+                //border: 2px solid red;
+                height: 30px;
+                //position: fixed;
+            
+                padding-top: 1.5em;
+    
+    
+                li{
+                    text-decoration: none;
+                    font-size: 2.1em;
+                    font-weight: bold;
+                    left:0em;
+                   // display: flex;
+                    flex-direction: row;
+                   // line-height: 30%;
+                    margin-right: .3em;
+                    color: white;
+                    
+                    //display: block;
+                    
+    //border: 2px solid red;
+         
+                }
+
+
+
+           }
+                      
+          
+         
+                    
+                
+            
+            }
+
+            .footer{
+                 top: 35em;
+                .right-footer{
+                    right: -37.5em;
+                 }
+            }
+            
+        
+    }
+}
+
+}
+
+}
+//animations
+#animal-type{
+    display: inline-block;
+  animation-name: slideInRight;
+  animation-duration: 1.5s;
+
+}
+.zoomed{
+    animation-name: scale;
+       animation-duration: 2s;
+    
+  }
+
+@keyframes  slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  @keyframes  scale {
+    0% {
+        transform: scale(1.18);
+      
+      }
+        100% {
+        transform: scaled(2);  left:21em;
+      
+      
+    }
+  }

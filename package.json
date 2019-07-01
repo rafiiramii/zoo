@@ -1,0 +1,19 @@
+{
+  "name": "zoo",
+  "version": "1.0.0",
+  "description": "<h3>Get the repo from git<h3> $git clone \"url\" $cd Zoo <h4>Continue with coding<h4>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafiiramii/Zoo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafiiramii/Zoo/issues"
+  },
+  "homepage": "https://github.com/rafiiramii/Zoo#readme"
+}

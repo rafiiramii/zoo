@@ -1,0 +1,126 @@
+body #home #front .center-container .title p {
+  padding-bottom: 2em;
+  width: 95%;
+  line-height: 121%;
+  font-family: 'Gotham';
+  font-weight: 420.25;
+  font-size: .62em;
+}
+
+body #home #front .center-container #animal-type {
+  background-position: 100% 50%;
+  top: -22em;
+  right: 5em;
+  bottom: 1em;
+  z-index: 1;
+  height: 100%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.075);
+}
+
+body #home #front .center-container #animal-type h5 {
+  font-family: 'Gotham';
+  font-weight: 500;
+  font-size: 0.73em;
+  padding-top: 1.8em;
+}
+
+body #home #front .center-container #animal-type ul {
+  top: -0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30px;
+  padding-top: 1.5em;
+}
+
+body #home #front .center-container #animal-type ul li {
+  text-decoration: none;
+  font-size: 2.1em;
+  font-weight: bold;
+  left: 0em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: .3em;
+  color: white;
+}
+
+body #home #front .center-container .footer {
+  top: 35em;
+}
+
+body #home #front .center-container .footer .right-footer {
+  right: -37.5em;
+}
+
+#animal-type {
+  display: inline-block;
+  -webkit-animation-name: slideInRight;
+          animation-name: slideInRight;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.zoomed {
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
+  }
+  100% {
+    -webkit-transform: scaled(2);
+            transform: scaled(2);
+    left: 21em;
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
+  }
+  100% {
+    -webkit-transform: scaled(2);
+            transform: scaled(2);
+    left: 21em;
+  }
+}
+/*# sourceMappingURL=animal.css.map */
